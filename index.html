@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Blog – IT & Krypto Gedanken</title>
+    <style>
+        /* CSS für Design */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007cba;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .blog-article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .blog-article h3 {
+            margin: 0 0 10px;
+        }
+        button {
+            background: #007cba;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005f8c;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            nav a { display: block; margin: 5px 0; }
+            section { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mein Blog</h1>
+        <p>Gedanken zu IT, Krypto & meinem Weg zum Millionär</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Über mich</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- Home/Über mich -->
+    <section id="home">
+        <h2>Willkommen</h2>
+        <p>Hallo, ich bin [Dein Name], 35 Jahre alt, in der Umschulung zum Fachinformatiker für Systemintegration in Heidelberg. Hier teile ich meine Gedanken zu IT, Krypto (z. B. meine 260 ADA) und meinem Ziel, Millionär zu werden. Schau dir meinen Blog an!</p>
+    </section>
+
+    <!-- Über mich -->
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Ich bin 35, lebe in Heidelberg und mache eine Umschulung zum Fachinformatiker. Nebenbei investiere ich in Krypto (z. B. Cardano, Dogecoin) und Aktien (Rheinmetall, TeamViewer). Mein Ziel: Millionär in 10–15 Jahren! Dieser Blog zeigt meinen Weg und meine Gedanken zu IT, Krypto und Leben.</p>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2>Meine Gedanken</h2>
+        <div class="blog-article">
+            <h3>Meine Umschulung: Tipps für IT-Anfänger</h3>
+            <p>Die IHK-Prüfung im November 2025 rückt näher. Hier teile ich, wie ich Netzwerke lerne und mich vorbereite...</p>
+            <button onclick="showArticle('umschulung')">Mehr lesen</button>
+        </div>
+        <div class="blog-article">
+            <h3>Warum ich 260 ADA halte</h3>
+            <p>Cardano hat Potenzial (Prognose 2026: 1,40–3,12 €). Trotz 10 € Verlust bleibe ich bullish...</p>
+            <button onclick="showArticle('ada')">Mehr lesen</button>
+        </div>
+        <div class="blog-article">
+            <h3>Mein Weg zum Millionär</h3>
+            <p>Mit Krypto, Aktien und Disziplin will ich in 10–15 Jahren 1 Million € erreichen...</p>
+            <button onclick="showArticle('million')">Mehr lesen</button>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Schreib mir: <a href="mailto:info@deinname.de">info@deinname.de</a></p>
+        <p>Folge mir auf <a href="https://x.com/deinprofil" target="_blank">X</a> für Updates!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 [Dein Name]. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Einfache Funktion für Blog-Interaktivität
+        function showArticle(id) {
+            let message = '';
+            if (id === 'umschulung') {
+                message = 'Hier ist der volle Artikel über meine Umschulung... (Erweitere hier)';
+            } else if (id === 'ada') {
+                message = 'Mehr zu meinen 260 ADA und warum ich Cardano halte...';
+            } else if (id === 'million') {
+                message = 'Mein Plan, Millionär zu werden mit Krypto und Aktien...';
+            }
+            alert(message); // Später durch vollständige Artikel-Seiten ersetzen
+        }
+        console.log('Website geladen!');
+    </script>
+</body>
+</html>
